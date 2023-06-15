@@ -3,18 +3,18 @@ export const nav = [
     text: "home",
     path: "/",
   },
-  {
-    text: "about",
-    path: "/about",
-  },
-  {
-    text: "services",
-    path: "/services",
-  },
-  {
-    text: "blog",
-    path: "/blog",
-  },
+//   {
+//     text: "about",
+//     path: "/about",
+//   },
+//   {
+//     text: "services",
+//     path: "/services",
+//   },
+//   {
+//     text: "blog",
+//     path: "/blog",
+//   },
   {
     text: "pricing",
     path: "/pricing",
@@ -25,36 +25,36 @@ export const nav = [
   },
 ];
 export const featured = [
+  // {
+  //   cover: "../images/hero/h1.png",
+  //   name: "Family House",
+  //   total: "122 Property",
+  // },
   {
-    cover: "../images/hero/h1.png",
-    name: "Family House",
-    total: "122 Property",
-  },
-  {
-    cover: "../images/hero/h2.png",
+    cover: "../logos/house.png",
     name: "House & Villa",
     total: "155 Property",
   },
   {
-    cover: "../images/hero/h3.png",
+    cover: "../logos/apartment.png",
     name: "Apartment",
     total: "300 Property",
   },
-  {
-    cover: "../images/hero/h4.png",
-    name: "Office & Studio",
-    total: "80 Property",
-  },
-  {
-    cover: "../images/hero/h6.png",
-    name: "Villa & Condo",
-    total: "80 Property",
-  },
+   {
+    cover: "../logos/office.png",
+     name: "Office & Studio",
+     total: "80 Property",
+   },
+  // {
+  //   cover: "../images/hero/h6.png",
+  //   name: "Villa & Condo",
+  //   total: "80 Property",
+  // },
 ];
 export const list = [
   {
     id: 1,
-    cover: "../images/list/p-1.png",
+    cover: "../logos/listImg/p-1.png",
     name: "Red Carpet Real Estate",
     location: "210 Zirak Road, Canada",
     category: "For Rent",
@@ -63,7 +63,7 @@ export const list = [
   },
   {
     id: 2,
-    cover: "../images/list/p-2.png",
+    cover: "../logos/listImg/p-2.png",
     name: "Fairmount Properties",
     location: "5698 Zirak Road, NewYork",
     category: "For Sale",
@@ -72,7 +72,7 @@ export const list = [
   },
   {
     id: 3,
-    cover: "../images/list/p-7.png",
+    cover: "../logos/listImg/p-7.png",
     name: "The Real Estate Corner",
     location: "5624 Mooker Market, USA",
     category: "For Rent",
@@ -81,7 +81,7 @@ export const list = [
   },
   {
     id: 4,
-    cover: "../images/list/p-4.png",
+    cover: "../logos/listImg/p-4.png",
     name: "Herringbone Realty",
     location: "5621 Liverpool, London",
     category: "For Sale",
@@ -90,7 +90,7 @@ export const list = [
   },
   {
     id: 5,
-    cover: "../images/list/p-5.png",
+    cover: "../logos/listImg/p-5.png",
     name: "Brick Lane Realty",
     location: "210 Montreal Road, Canada",
     category: "For Rent",
@@ -99,7 +99,7 @@ export const list = [
   },
   {
     id: 6,
-    cover: "../images/list/p-6.png",
+    cover: "../logos/listImg/p-6.png",
     name: "Banyon Tree Realty",
     location: "210 Zirak Road, Canada",
     category: "For Sale",

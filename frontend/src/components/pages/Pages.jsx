@@ -1,19 +1,20 @@
 import React from "react";
 import { Header } from "../header/Header";
-import { BrowserRouter as Router, Routes} from "react-router-dom"
- 
-
-
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import {Home} from "../Home/Home";
 
 export const Pages = () => {
   return (
     <>
-          <Router>
+      <Router>
         <Header />
         <Routes>
-        
+          
+          <Route  path="/" Component={Home} />
         </Routes>
-       </Router>
+      </Router>
     </>
   );
 };
+
+ 

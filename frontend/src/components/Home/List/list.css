@@ -1,0 +1,49 @@
+.list .text{
+    padding: 30px;
+}
+
+.list .category span{
+    padding: 4px 15px;
+    border-radius: 2px;
+    font-weight: 600;
+    font-size: 13px;
+    display: inline-block;
+}
+
+.list .category i{
+    font-size: 20px;
+    color: #bec7d8;
+ 
+}
+.fa-heart{
+float: right;
+
+}
+.list p{
+    color: #72809d;
+    padding: 5px 0;
+
+}
+
+.list .button{
+    border-top: 1px solid #efe8f3;
+    padding: 10px 0;
+}
+
+
+@media screen and (max-width: 768px){
+ .container-listCard{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem;
+    padding: 4rem;
+ 
+}
+
+.button-listCard .btn2{
+    background-color: greenyellow;
+    width: 6rem;
+    height: 2rem;
+    padding: 0;
+ }
+  }

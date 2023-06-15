@@ -40,8 +40,87 @@ button {
   color: #fff;
   cursor: pointer;
   font-weight: bold;
-  }
+}
 
-  button i{
-    margin-right: 5px;
-  }
+button i {
+  margin-right: 5px;
+}
+/* *********** */
+/* '.heading comes from Heading component */
+.heading {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}
+
+.heading h1 {
+  color: #2f3954;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 35px;
+}
+
+.heading p {
+  color: #72809d;
+}
+
+textarea,
+input {
+  border: none;
+  outline: none;
+  background-color: none;
+}
+
+.background {
+  padding: 80px 0;
+  position: relative;
+  background-color: #f7f9fc;
+}
+/* The CSS property grid-template-columns is used to 
+define the columns in a grid container.
+ here grid-template-columns: repeat(3, 1fr);, 
+ it sets up a grid container with five columns, 
+ each having a width of 1 fraction unit (1fr). */
+.grid3-feature {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+label {
+  color: #2d3954;
+  font-size: 14px;
+}
+
+.mtop {
+  margin-top: 50px;
+}
+
+h4 {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.shadow{
+  box-shadow: 0 0 20px 0 rgb(112 121 138 / 18%);
+}
+
+.padding{
+  padding: 80px 0;
+}
+
+.grid3-list{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+img{
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.btn2{
+  border-radius: 50px;
+  font-size: 20px;
+}
+
