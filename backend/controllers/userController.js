@@ -1,5 +1,7 @@
+import { generateToken } from "../helper/authorization.js";
 import User from "../models/userModel.js";
 import { StatusCodes } from "http-status-codes";
+import bcrypt from "bcrypt";
 
 
 /**
@@ -11,21 +13,23 @@ import { StatusCodes } from "http-status-codes";
 export const addNewUser = async (req, res) => {
 
     try {
-        const addUser = await User.create({
+        const hashedPassword = await bcrypt.hash(req.body.password, 10);
+
+        const user = await User.create({
             firstName: req.body.firstName,
             lastName: req.body.lastName,
             dateOfBirth: req.body.dateOfBirth,
             email: req.body.email,
             userName: req.body.userName,
-            password: req.body.password,
+            password: hashedPassword,
             phoneNumber: req.body.phoneNumber,
                  });
         
           return res
             .status(StatusCodes.OK)
-            .json({message: "New User is added", addUser });
+            .json({message: "New User is added", user });
     } catch (error) {
-        return res.status(StatusCodes.BAD_REQUEST).json(error)
+        return res.status(500).json(error)
     }
 
 };
@@ -70,3 +74,30 @@ export const updateOfUser = async (req, res) => {
     }
   };
   
+  export const loginUser = async(req,res)=>{
+
+    const user = await User.findOne({userName: req.body.userName});
+
+    if(user == null){
+        return res.status(StatusCodes.OK).json({message:'Invalid username or password', user})
+    }
+    try {
+// compare password
+        const passwordValidation = await bcrypt.compare(
+            req.body.password,
+            user.password
+        );
+
+        if(passwordValidation){
+            const token = generateToken(user);
+            
+            return res.status(StatusCodes.OK).json({token})
+        }
+        else{
+            return res.status(StatusCodes.INTERNAL_SERVER_ERROR).json("Password is not valid")
+        }
+
+    } catch (error) {
+        return res.status(StatusCodes.BAD_REQUEST).json({success: false, error: error.message})
+    }
+  }
