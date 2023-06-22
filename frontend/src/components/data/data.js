@@ -32,11 +32,11 @@ export const featured = [
     name: "Apartment",
     total: "300 Property",
   },
-   {
+  {
     cover: "../logos/office.png",
-     name: "Office & Studio",
-     total: "80 Property",
-   },
+    name: "Office & Studio",
+    total: "80 Property",
+  },
   // {
   //   cover: "../images/hero/h6.png",
   //   name: "Villa & Condo",
@@ -173,40 +173,19 @@ export const list = [
 //   ]
 export const team = [
   {
-    list: "50",
     cover: "../images/teamImage/team-1.jpg",
-    address: "Liverpool, Canada",
-    name: "Sargam S. Singh",
-    icon: [
-      <i class="fa-brands fa-facebook-f"></i>,
-      <i class="fa-brands fa-linkedin"></i>,
-      <i class="fa-brands fa-twitter"></i>,
-      <i class="fa-brands fa-instagram"></i>,
-    ],
+    address: "Düsseldorf",
+    name: "Philip Marks",
   },
   {
-    list: "70",
     cover: "../images/teamImage/team-2.jpg",
-    address: "Montreal, Canada",
-    name: "Harijeet M. Siller",
-    icon: [
-      <i class="fa-brands fa-facebook-f"></i>,
-      <i class="fa-brands fa-linkedin"></i>,
-      <i class="fa-brands fa-twitter"></i>,
-      <i class="fa-brands fa-instagram"></i>,
-    ],
+    address: "Berlin",
+    name: "Natasha Jackson",
   },
   {
-    list: "80",
     cover: "../images/teamImage/team-3.jpg",
-    address: "Denever, USA",
-    name: "Anna K. Young",
-    icon: [
-      <i class="fa-brands fa-facebook-f"></i>,
-      <i class="fa-brands fa-linkedin"></i>,
-      <i class="fa-brands fa-twitter"></i>,
-      <i class="fa-brands fa-instagram"></i>,
-    ],
+    address: "Hamburg",
+    name: "Kevin Bauman",
   },
   // {
   //   list: "51",
@@ -316,22 +295,22 @@ export const footer = [
       { list: "Home Page" },
       { list: "About Page" },
       { list: "Service Page" },
-    //   { list: "Property Page" },
+      //   { list: "Property Page" },
       { list: "Contact Page" },
-    //   { list: "Single Blog" },
+      //   { list: "Single Blog" },
     ],
   },
-//   {
-//     title: "ALL SECTIONS",
-//     text: [
-//       { list: "Headers" },
-//       { list: "Features" },
-//      { list: "Attractive" },
-//       { list: "Testimonials" },
-//       { list: "Videos" },
-//       { list: "Footers" },
-//     ],
-//   },
+  //   {
+  //     title: "ALL SECTIONS",
+  //     text: [
+  //       { list: "Headers" },
+  //       { list: "Features" },
+  //      { list: "Attractive" },
+  //       { list: "Testimonials" },
+  //       { list: "Videos" },
+  //       { list: "Footers" },
+  //     ],
+  //   },
   {
     title: "COMPANY",
     text: [
