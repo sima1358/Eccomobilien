@@ -3,21 +3,13 @@ export const nav = [
     text: "home",
     path: "/",
   },
-//   {
-//     text: "about",
-//     path: "/about",
-//   },
-//   {
-//     text: "services",
-//     path: "/services",
-//   },
-//   {
-//     text: "blog",
-//     path: "/blog",
-//   },
   {
-    text: "pricing",
-    path: "/pricing",
+    text: "Rent Price List",
+    path: "/rentPriceList",
+  },
+  {
+    text: "Sale Price List",
+    path: "/salePriceList",
   },
   {
     text: "contact",
@@ -182,7 +174,7 @@ export const list = [
 export const team = [
   {
     list: "50",
-    cover: "../images/customer/team-1.jpg",
+    cover: "../images/teamImage/team-1.jpg",
     address: "Liverpool, Canada",
     name: "Sargam S. Singh",
     icon: [
@@ -194,7 +186,7 @@ export const team = [
   },
   {
     list: "70",
-    cover: "../images/customer/team-2.jpg",
+    cover: "../images/teamImage/team-2.jpg",
     address: "Montreal, Canada",
     name: "Harijeet M. Siller",
     icon: [
@@ -206,7 +198,7 @@ export const team = [
   },
   {
     list: "80",
-    cover: "../images/customer/team-3.jpg",
+    cover: "../images/teamImage/team-3.jpg",
     address: "Denever, USA",
     name: "Anna K. Young",
     icon: [
